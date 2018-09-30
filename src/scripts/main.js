@@ -7,9 +7,8 @@ $(document).ready(function(){
 	});
 	
 	$('#itens ul li').on('touchstart', function(){
-		$(this).parent().removeClass('active');
+		$(this).siblings().removeClass('active');
 		$(this).toggleClass('active');
-		console.log($(this).parent().parent());
 	});
 
 })
