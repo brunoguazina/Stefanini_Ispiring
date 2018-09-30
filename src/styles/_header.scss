@@ -3,18 +3,18 @@ header {
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
     color: $tertiary-color;
-    display: block;
+    padding: 22px 0 20px 0;
 
 	i.menu {
+        cursor: pointer;
 		font-size: 23px;
 		float: left;
-		margin: 25px 0 0 15px;
+		margin: 5px 0 0 15px;
 	}
 
 	div	{
 		text-align: center;
 		margin: 0 auto;
-		padding: 22px 0 20px 0;
 		width: 75%;
 
 		i {
