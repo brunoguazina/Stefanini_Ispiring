@@ -15,17 +15,17 @@ menu {
 	-moz-transform: translateX(-300px);
 	-ms-transform: translateX(-300px);
 	transform: translateX(-300px);
-	-webkit-transition: all .25s linear;
-	-moz-transition: all .25s linear;
-	-ms-transition: all .25s linear;
-	transition: all .25s linear;
+	-webkit-transition: all .35s linear;
+	-moz-transition: all .35s linear;
+	-ms-transition: all .35s linear;
+	transition: all .35s linear;
 }
 
 .menu-active menu {
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
-	transform: translateX(0);
+    transform: translateX(0);
 }
 
 .itensMenu {
@@ -52,5 +52,9 @@ menu {
 	-webkit-transform: translateX(300px);
 	-moz-transform: translateX(300px);
 	-ms-transform: translateX(300px);
-	transform: translateX(300px);
+    transform: translateX(300px);
+    -webkit-transition: all .35s linear;
+	-moz-transition: all .35s linear;
+	-ms-transition: all .35s linear;
+	transition: all .35s linear;
 }
