@@ -2,14 +2,16 @@
 @import "_fonts";
 @import "_variables";
 
-h1 {
-	font-size: 55px;
-}
-
 html,
 body {
+	background-color: $background-color;
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
-	color: $text-color;
+}
+
+header {
+	background-color: $primary-color;
+	border-radius: 0 10px 10px 0;
+	color: $tertiary-color;
 }
