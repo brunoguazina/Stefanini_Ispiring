@@ -1,6 +1,10 @@
 
+@import "_reset";
 @import "_fonts";
 @import "_variables";
+
+/** components **/
+
 
 html,
 body {
@@ -12,6 +16,69 @@ body {
 
 header {
 	background-color: $primary-color;
-	border-radius: 0 10px 10px 0;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 	color: $tertiary-color;
+
+	i.menu {
+		font-size: 23px;
+		float: left;
+		margin: 25px 0 0 15px;
+	}
+
+	div	{
+		text-align: center;
+		margin: 0 auto;
+		padding: 22px 0 20px 0;
+		width: 75%;
+
+		i {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 35px;
+		}
+	}
+
+}
+
+.title {
+	padding: 0 20px 0 0;
+	margin: 25px 0 0 15px;
+	color: $primary-color;
+	font-size: 18px;
+	font-weight: 700;
+	
+	span {
+		padding-bottom: 5px;
+		border-bottom: 3px solid $secondary-color;
+	}
+
+	i {
+		float: right;
+	}
+}
+
+.medicines {
+	margin: 32px 0 0 0;
+}
+
+
+.card {
+	display: inline-table;
+	background-color: $tertiary-color;
+	border-radius: 6px;
+	width: 140px; 
+
+	&:first-child {
+		margin: 20px;
+	}
+}
+
+figure {
+	text-align: center;
+	margin-bottom: 15px;
+	
+	figcaption {
+		font-weight: 600;
+	}
 }
