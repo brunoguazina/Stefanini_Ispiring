@@ -5,6 +5,7 @@
 @import "_variables";
 
 /** components **/
+@import "_add-item";
 @import "_menu";
 @import "_header";
 
@@ -84,11 +85,7 @@ figure {
 
 	span {
 		margin: 10px 5px 5px 5px;
-		
-		&:last-child {
-			margin: 10px 5px 5px 5px;
-			display: block;
-		}
+		display: block;
 	}
 	
 }

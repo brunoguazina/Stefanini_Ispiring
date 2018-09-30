@@ -2,7 +2,8 @@ header {
 	background-color: $primary-color;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
-	color: $tertiary-color;
+    color: $tertiary-color;
+    display: block;
 
 	i.menu {
 		font-size: 23px;
