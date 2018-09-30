@@ -11,4 +11,9 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 
+	$('ul #doctor').on('touchstart', function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	});
+
 })
