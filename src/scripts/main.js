@@ -1,9 +1,9 @@
-console.log('Haaa');
 
-$('.btnPopUp').on('click', function() {
-	$('.popUp').show();
-});
+$(document).ready(function(){
 
-$('.close').on('click', function() {
-	$('.popUp').hide();
-});
+	$('.menu').on('click touchstart', function(e){
+		$('html').toggleClass('menu-active');
+	  	e.preventDefault();
+	});
+	
+})

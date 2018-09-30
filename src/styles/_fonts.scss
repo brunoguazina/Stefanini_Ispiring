@@ -24,6 +24,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-edit:before {
+    content: "\e90f";
+  }
   .icon-menu:before {
     content: "\e900";
   }
@@ -69,4 +72,3 @@
   .icon-voucher:before {
     content: "\e90e";
   }
-  
