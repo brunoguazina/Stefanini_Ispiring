@@ -1,3 +1,7 @@
+
+@import "_variables";
+@import "_mixin";
+
 .user {
 	margin: 32px 0 50px 0;
 
@@ -31,21 +35,27 @@ menu {
 }
 
 menu {
-	-webkit-transform: translateX(-300px);
-	-moz-transform: translateX(-300px);
-	-ms-transform: translateX(-300px);
-	transform: translateX(-300px);
-	-webkit-transition: all .35s linear;
-	-moz-transition: all .35s linear;
-	-ms-transition: all .35s linear;
-	transition: all .35s linear;
+	@include transform(translateX(-300px));
+	@include transition($primary-transition);
 }
 
 .menu-active menu {
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	-ms-transform: translateX(0);
-    transform: translateX(0);
+	@include transform(translateX(0));
+	@include transition($primary-transition);
+}
+
+.menu-active header, 
+.menu-active section,
+.menu-active footer {
+	@include transform(translateX(300px));
+	@include transition($primary-transition);
+}
+
+header, 
+section,
+footer {
+	@include transform(translateX(0));
+	@include transition($primary-transition);
 }
 
 .itensMenu {
@@ -64,17 +74,4 @@ menu {
 		}
 	}
 	
-}
-
-.menu-active header, 
-.menu-active section,
-.menu-active footer {
-	-webkit-transform: translateX(300px);
-	-moz-transform: translateX(300px);
-	-ms-transform: translateX(300px);
-    transform: translateX(300px);
-    -webkit-transition: all .35s linear;
-	-moz-transition: all .35s linear;
-	-ms-transition: all .35s linear;
-	transition: all .35s linear;
 }
