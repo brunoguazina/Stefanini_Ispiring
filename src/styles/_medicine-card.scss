@@ -22,6 +22,8 @@
 	box-shadow: $shadow;
 	position: relative;
 
+	@include figure($font-size-regular);
+
 	&:first-child {
 		margin-left: 20px;
 	}
@@ -38,8 +40,6 @@
 	}
 
 }
-
-@include figure($font-size-regular);
 
 
 .details {
