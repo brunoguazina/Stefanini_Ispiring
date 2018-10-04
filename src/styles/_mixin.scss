@@ -11,3 +11,19 @@
 	   -moz-transition: $property;
 			transition: $property;
 }
+
+// TO DO: finalizar os mixins
+@mixin figure($font) {
+
+	img {
+		border-radius: 50%;
+		border: solid 4px #fff;
+	}
+
+	figcaption {
+		margin-top: 12px;
+		font-size: $font;
+		font-weight: 600;
+	}
+
+}

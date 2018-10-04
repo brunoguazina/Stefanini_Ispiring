@@ -17,6 +17,7 @@
 	margin: 0 0 0 5px;
 	padding: 5px;
 	color: #858585;
+	text-align: center;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
 	position: relative;
 
@@ -37,19 +38,12 @@
 
 }
 
-figure {
-	text-align: center;
-	margin-bottom: 15px;
+@include figure($font-size-regular);
 
-	figcaption {
-		font-size: 14px;
-		
-		font-weight: 600;
-	}
-}
 
 .details {
-	font-size: 12px;
+	text-align: left;
+	font-size: $font-size-small;
 	margin: 5px 0;
 
 	span {
@@ -62,7 +56,7 @@ figure {
 .price {
 	font-weight: bold;
 	line-height: normal;
-	font-size: 18px;
+	font-size: $font-size-big;
 	margin: 10px;
 	text-align: center;
 	color: $secondary-color;

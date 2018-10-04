@@ -25,7 +25,7 @@ body {
 	padding: 0 20px 0 0;
 	margin: 32px 0 0 20px;
 	color: $primary-color;
-	font-size: 18px;
+	font-size: $font-size-big;
 	font-weight: 700;
 	
 	span {
@@ -52,7 +52,7 @@ button {
 	text-transform: uppercase;
 	font-weight: bold;
 	line-height: normal;
-	font-size: 14px;
+	font-size: $font-size-regular;
 	background-color: $secondary-color;
 	color: $tertiary-color;
 	width: 85%;
@@ -80,6 +80,6 @@ button {
 
 footer {
 	text-align: center;
-	font-size: 12px;
+	font-size: $font-size-small;
 	margin-bottom: 16px;
 }

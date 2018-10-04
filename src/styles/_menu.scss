@@ -4,22 +4,8 @@
 
 .user {
 	margin: 32px 0 50px 0;
-
-	figure {
-		text-align: center;
-		margin-bottom: 15px;
-		
-		img {
-			border-radius: 50%;
-			border: solid 4px #fff;
-		}
-	
-		figcaption {
-			margin-top: 12px;
-			font-size: 26px;
-			font-weight: 600;
-		}
-	}
+	text-align: center;
+	@include figure($font-size-SuperBig);
 }
 
 menu {
@@ -32,30 +18,6 @@ menu {
 	padding-top: 10px;
 	background: $primary-color;
 	color: $tertiary-color;
-}
-
-menu {
-	@include transform(translateX(-300px));
-	@include transition($primary-transition);
-}
-
-.menu-active menu {
-	@include transform(translateX(0));
-	@include transition($primary-transition);
-}
-
-.menu-active header, 
-.menu-active section,
-.menu-active footer {
-	@include transform(translateX(300px));
-	@include transition($primary-transition);
-}
-
-header, 
-section,
-footer {
-	@include transform(translateX(0));
-	@include transition($primary-transition);
 }
 
 .itensMenu {
@@ -74,4 +36,24 @@ footer {
 		}
 	}
 	
+}
+
+menu {
+	@include transform(translateX(-300px));
+	@include transition($primary-transition);
+}
+
+.menu-active menu {
+	@include transform(translateX(0));
+	@include transition($primary-transition);
+}
+
+.menu-active header, .menu-active section, .menu-active footer {
+	@include transform(translateX(300px));
+	@include transition($primary-transition);
+}
+
+header, section, footer {
+	@include transform(translateX(0));
+	@include transition($primary-transition);
 }
