@@ -1,16 +1,16 @@
 
 $(document).ready(function(){
 
-	$('.menu').on('touchstart', function(e){
+	$('.menu').on('click', function(event){
 		$('html').toggleClass('menu-active');
-	  	e.preventDefault();
+		event.preventDefault();
 	});
 	
-	$('#itens ul li').on('touchstart', function(){
+	$('#itens ul li').on('click', function(){
 		toggle(this);
 	});
 
-	$('ul #doctor').on('touchstart', function(){
+	$('ul #doctor').on('click', function(){
 		toggle(this);
 	});
 
