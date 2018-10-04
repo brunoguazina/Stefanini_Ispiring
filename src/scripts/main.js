@@ -7,13 +7,16 @@ $(document).ready(function(){
 	});
 	
 	$('#itens ul li').on('touchstart', function(){
-		$(this).siblings().removeClass('active');
-		$(this).toggleClass('active');
+		toggle(this);
 	});
 
 	$('ul #doctor').on('touchstart', function(){
-		$(this).siblings().removeClass('active');
-		$(this).toggleClass('active');
+		toggle(this);
 	});
+
+	function toggle(clickedElement) {
+		$(clickedElement).siblings().removeClass('active');
+		$(clickedElement).toggleClass('active');
+	}
 
 })
